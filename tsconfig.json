@@ -13,7 +13,10 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "paths": {},
+    "paths": {
+      "@app/*": ["src/application/*"],
+      "@datasource/*": ["src/datasource/*"]
+    },
     "typeRoots": ["*.d.ts", "types/*.d.ts"],
     "types": ["@types/jest"]
   },

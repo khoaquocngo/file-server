@@ -1,9 +1,8 @@
-import './src/application/config';
+import '@app/config';
 
+import { startHttpServer } from '@app/server';
+import { connectMongoDB } from '@datasource/mongodb/datasource';
 import { defaultLogger } from '@gln-libs/node-infrastructure';
-
-import { startHttpServer } from './src/application/server';
-import { connectMongoDB } from './src/datasource/mongodb/datasource';
 
 global.logger = defaultLogger();
 

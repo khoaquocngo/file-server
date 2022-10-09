@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "npx nodemon index.ts",
+    "start": "npx nodemon -r tsconfig-paths/register -r ts-node index.ts",
     "tsc": "tsc",
     "lint": "eslint . --ext .ts"
   },

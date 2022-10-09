@@ -1,8 +1,8 @@
+import { AppConfig } from '@app/config/index';
+import ExampleController from '@app/example/example.controller';
 import { httpLogger, ResponseUtils } from '@gln-libs/node-infrastructure';
 import express from 'express';
 
-import { AppConfig } from './config';
-import ExampleController from './example/example.controller';
 import { corsMiddleware } from './middleware';
 
 const setupAppMiddlewares = (app: express.Express) => {
