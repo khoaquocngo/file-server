@@ -3,6 +3,7 @@ import express from 'express';
 
 import { AppConfig } from './config';
 import ExampleController from './example/example.controller';
+import FileController from './file/file.controller';
 import { corsMiddleware } from './middleware';
 
 const setupAppMiddlewares = (app: express.Express) => {
@@ -23,6 +24,7 @@ const setupAppMiddlewares = (app: express.Express) => {
 
 const initializeControllers = (app: express.Express): void => {
   app.use('/api/example', ExampleController);
+  app.use('/api/file', FileController);
 };
 
 export const startHttpServer = (): void => {

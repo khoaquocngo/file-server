@@ -19,5 +19,5 @@ export const AppConfig = {
 } as const;
 
 export const fileConfig = {
-  rootPath: path.resolve(`./image`),
+  rootPath: path.resolve(`./store`),
 };
